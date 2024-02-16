@@ -54,5 +54,16 @@ function mostrarImagen(id) {
     const cerrarModal = document.createElement('p');
     cerrarModal.textContent = 'X';
     cerrarModal.classList.add('btn-cerrar');
+    cerrarModal.onclick = function(){
+        const body = document.querySelector('body');
+        body.classList.remove('fijar-body');
+        overlay.remove();
+    }
+
+    overlay.appendChild(cerrarModal);
+
+    const body = document.querySelector('body');
+    body.appendChild(overlay);
+    body.classList.add('fijar-body');
      
 }
