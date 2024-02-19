@@ -1,0 +1,13 @@
+.video{
+    position: relative;
+    max-height: 70rem;
+    min-height: 50rem;
+
+}
+
+.video .overlay{
+    position: absolute;
+    background: rgb(74, 213, 156, 0.1);
+    background: linear-gradient(90deg, rgba(74, 213, 156, 0.1) 0%, rgba(74, 213, 156, 0.1) 35%, rgba(74, 213, 156, 0.1) 100%);
+    
+}
